@@ -6,7 +6,7 @@ layout: nil
   <title>Pub Hack Meetups</title>
   <!--<link href="http://example.com/atom.xml" rel="self"/>-->
   <updated>{{site.time | date_to_xmlschema }}</updated>
-  <!--<id>http://example.com/</id>-->
+  <id>http://barkingiguana.com/pub-hack</id>
   <author>
     <name>Pub Hack Meetups</name>
     <email>craig+pubhack@barkingiguana.com</email>
@@ -16,7 +16,7 @@ layout: nil
     <title>{{ post.title }}</title>
     <link href="{{ post.url }}"/>
     <updated>{{post.date | date_to_xmlschema }}</updated>
-    <id>{{ post.url }}</id>
+    <id>http://barkingiguana.com/pub-hack{{ post.url }}</id>
     <content type="html">{{ post.content | xml_escape }}</content>
   </entry>
   {% endfor %}
