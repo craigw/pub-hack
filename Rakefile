@@ -15,7 +15,7 @@ class Meetup
     m.date = (Dir[POSTS + '/*.md'].map { |file_name|
       stamp = File.basename(file_name, '.md').scan(/(\d+-\d+-\d+)-.*/)[0][0]
       Time.parse stamp
-    }.sort[-1] || Time.now - (21 * 86400)).to_date.next_month
+    }.sort[-1] || Time.now).to_date.next_month
     m
   end
 

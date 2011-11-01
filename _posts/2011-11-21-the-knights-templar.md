@@ -1,7 +1,7 @@
 ---
 layout: meetup
-pub_name: The Duke of York
-pub_link: http://beerintheevening.com/pubs/s/82/8265/Duke_of_York/Marylebone
+pub_name: The Knights Templar
+pub_link: http://beerintheevening.com/pubs/s/15/1536/Knights_Templar/Chancery_Lane
 ---
 
 On {{ page.date | date_to_string }} we will meet at [{{ page.pub_name }}][0].
