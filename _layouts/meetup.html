@@ -1,0 +1,26 @@
+---
+layout: base
+---
+<div class="post">
+  <div id="hd">
+    <h1>{{ page.pub_name }} - {{ page.date | date_to_string }}</h1>
+  </div>
+  <div id="bd">
+    <div class="content" id="content">
+    {{ content }}
+    </div>
+    <dl class="meta">
+      <dt class="property">meetup date</dt>
+      <dd class="meetup date value">{{ page.date | date_to_string }}</dd>
+    </dl>
+    <div class="related">
+      {% if page.previous.url %}
+        <a class="previous" href="{{ page.previous.url }}" rel="previous" title="{{ page.previous.title }}">{{ page.previous.title | truncatewords: 15 }}</a>
+      {% endif %}
+      <a class="up" href="/" rel="up">Home</a>
+      {% if page.next.url %}
+	<a class="next" href="{{ page.next.url }}" rel="next" title="{{ page.next.title }}">{{ page.next.title | truncatewords: 15 }}</a>
+      {% endif %}
+    </div>
+  </div>
+</div>
