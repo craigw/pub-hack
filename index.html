@@ -11,7 +11,7 @@ layout: page
   {% for meetup in site.posts %}
     {% if forloop.first %}
       <li class="most_recent meetup">
-       The <a href="permalink" href="/pub-hack{{ meetup.url }}">next meetup</a> is at <a class="permalink title" href="{{ meetup.pub_url }}">{{ meetup.pub_name }}</a> on <span class="date">{{ meetup.date | date_to_string }}</span>
+       The <a href="permalink" href="/pub-hack{{ meetup.url }}">next meetup</a> is at <a class="permalink title" href="{{ meetup.pub_url }}">{{ meetup.pub_name }}</a>, starting around 6pm on <span class="date">{{ meetup.date | date_to_string }}</span>
       </li>
     {% else %}
       <li class="past meetup">
